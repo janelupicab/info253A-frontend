@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>hi, i'm jane 👋 </h1>
+    <img src="images/me.jpeg" alt="That's me" width="400" 
+    height="500" />
+    <h2>about me</h2>
+        <p>I am a master's student at UC Berkeley's school of information, studying ux research for digital products. I am passionate about human-centered innovation driven by applied technologies. I want to simplify the way users interact with new experiences. </p>
+    <p>........................ </p>
+    <h2>my projects</h2>
+        <h3>in graduate school</h3>
+            <h4>uc berkeley x google area 120</h4>
+                <h5>summary</h5>
+                    <p> For this project, we worked with Google's area 120 and answered the question: What are current perceptions of the creator economy ecosystem among BIPOC creators? </p>
+                <h5> team members</h5>
+                    <p> I worked with ian, bea, and eileen on this project. We partnered with an advisor at Google to guide our research. </p>
+                <h5>process</h5>
+                    <h6>recruitment</h6>
+                        <p> Our recruitment was done through personal networks as well as posting flyers the bay, LA, & DC </p>
+                    <h6>diary studies</h6>
+                        <p> We conducted diary studies over 5 days, comprised of a morning and afternoon survey to learn about how creators were meeting their content creation goals for the day. </p>
+                    <h6>interviews</h6>
+                        <p> We interviewed 9 participants over zoom to understand in more detail the experience of a BIPOC content creators. </p>
+        <h3>at work</h3>
+            <h4>summer internship</h4>
+                <h5>new market share project</h5>
+                <h5>intercept interview project</h5>
+                <h5>desk research project</h5>
+            <h4>accenture</h4>
+                <h5>ux research project</h5>
+                <h5>product management project</h5>
+                <h5>rda business analyst project</h5>
+
+    <p>........................ </p>
+    <h2>my hobbies</h2>
+        <h4>pokemon go</h4>
+            <p>I am level 36 & counting!</p>
+        <h4>reading new books</h4>
+            <p>my last read book was Bunny by Mona Awad</p>
+            <p>the most interesting book I've read is American Kingpin by Nick Bilton</p>
+        <h4>fostering queer communities</h4>
+        <p>I am on the leadership team for Queer Grads at UCB</p>
+
+    <a href="https://www.linkedin.com/in/janelupica/"> connect with me on LinkedIn! </a>
+  </body>
+</html>
