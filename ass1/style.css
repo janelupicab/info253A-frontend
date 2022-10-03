@@ -1,6 +1,9 @@
 
 h1{
     font-size: 20px;
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-bottom: 20px;
 
 }
 
@@ -31,11 +34,17 @@ hr{
     width: 90%;
 }
 
+details{
+    list-style-type: none; 
+    margin: 10px;
+    display: block; 
+       
+}
+
 .grid-container {
     display: grid;
     height: 600px; /*determine what to put here?? */
     grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
-    background-color: #9ec3e2;
     align-items: top;
     grid-row-gap: none;
   }
@@ -76,10 +85,10 @@ hr{
 .item3{ /* right nav */
     grid-column: 3 / 7;
     grid-row: 2 / 16; /* the num rows is determiend by the height of the grid container*/
-    border-style: solid;
-    border-color:yellow;
     margin-top: -10px;
     min-width: 200px;
+    background-color: white;
+
 
 }
 
@@ -119,20 +128,23 @@ hr{
   }
 
 .check{
-    -webkit-appearance: none;
+    appearance: none;
     background-color: #fafafa;
-	border: 1px solid #cacece;
+	border: 1px solid gray;
 	padding: 5px;
 	border-radius: 100%;
 	display: inline-block;
     vertical-align: middle;
+    margin: 10px;
+    margin-left: 40px;
 	/* position: relative; */
 }
 
-/* .tasks{
-    border-bottom: 1px solid blue;
+input[type=checkbox]:checked {
+    border: 1px solid rgb(180, 120, 0);
+    background-color: rgb(249, 166, 43);
+}
 
-} */
 
 
 
@@ -221,7 +233,7 @@ hr{
     padding-left: 0px;
     padding-right: 8px;
     padding-bottom: 4px;
-    font-size: 20px !important; 
+    font-size: 20px !important;
 }
 
 .material-symbols-outlined.red3{
