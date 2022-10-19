@@ -58,13 +58,14 @@ function Landing () {
             </div>
             <div class = "div3">
                     <h3>pokemon go</h3>
-                    <ul>
+                    <ArrayMap></ArrayMap>
+                    {/* <ul>
                         <li class = "li"> i am level 36 & counting! </li>
                         <li class = "li"> i am on team valor </li>
                         <li class = "li"> add me! my trainer code is: <span class = "ppink"> 0126 9490 6285</span>  </li>
 
 
-                    </ul>
+                    </ul> */}
                     <h3>reading new books</h3>
                     <ul>
                         <li class = "li">my last read book was Bunny by Mona Awad </li>

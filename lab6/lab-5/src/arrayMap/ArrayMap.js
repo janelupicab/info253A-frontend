@@ -1,39 +1,36 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
+import { useSetState } from "react-use";
 
 const ArrayMap = () => {
-  const [profiles, setProfiles] = useState([
-    "https://images.dog.ceo/breeds/bulldog-boston/n02096585_2727.jpg",
+  const [hobbies, setHobbies] = useState([
+    "I am level 38 and counting!"
   ]);
-
-  const getDogImages = async () => {
-    let imageSources = [];
-    while (imageSources.length < 10) {
-      const imageData = await axios.get(
-        "https://dog.ceo/api/breeds/image/random"
-      );
-      const dogImage = imageData.data.message;
-      imageSources.push(dogImage);
-    }
-    return imageSources;
-  };
+  
+const getHobbies = async() => {
+  if (hobbies.length < 3){
+    hobbies.push("i  am on team valor");
+    hobbies.push("add me! my trainer code is: 0126 9490 6285");
+  }
+  return hobbies
+}
 
   useEffect(() => {
-    if (profiles.length < 10) {
-      getDogImages().then((dogImages) => {
-        setProfiles(dogImages);
+    if (hobbies.length < 3){
+      getHobbies().then((hobbies) => {
+      setHobbies(hobbies);
       });
     }
-  }, [profiles]);
+  });
 
+  getHobbies();
   return (
     <>
-      {profiles.map((dogImage, index) => {
-        console.log({ index, dogImage });
+      {hobbies.map((description, index) => {
+        console.log({ index, description});
         return (
-          <div key={index} style={{margin: "20px"}}>
-            <img key={index} src={dogImage} height="300px" width="300px" />
-          </div>
+          <ul>
+            <li>{description}</li>
+          </ul>
         );
       })}
     </>
