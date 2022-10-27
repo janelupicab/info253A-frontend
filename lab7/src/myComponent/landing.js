@@ -1,10 +1,10 @@
-// import ArrayMap from "../arrayMap/ArrayMap";
-import React, {useContext} from 'react';
-import { ItemContext } from "../App"; // Importing the Context we created in the Parent
+import {useContext} from 'react';
+import { ItemContext } from "../App"; 
 
 
-const Landing = () => {
-    // const { hobbies, setHobbies} = useContext(ItemContext);
+function Landing () {
+    const { hobbies, setHobbies } = useContext(ItemContext); 
+
     return (
         <>
         <body>
@@ -63,14 +63,17 @@ const Landing = () => {
             </div>
             <div class = "div3">
                     <h3>pokemon go</h3>
-                    {/* ${hobbies}; */}
-                    {/* <ul>
-                        <li class = "li"> i am level 36 & counting! </li>
-                        <li class = "li"> i am on team valor </li>
-                        <li class = "li"> add me! my trainer code is: <span class = "ppink"> 0126 9490 6285</span>  </li>
-
-
-                    </ul> */}
+                    
+                    {/* added from context */}
+                    
+                    {hobbies.map((description, index) => {
+                        return (
+                            <ul>
+                                <li>{description}</li>
+                            </ul>
+                        );
+                    })}
+                    
                     <h3>reading new books</h3>
                     <ul>
                         <li class = "li">my last read book was Bunny by Mona Awad </li>
@@ -116,7 +119,6 @@ const Landing = () => {
         </body>
         </>
       );
-
 }
 
 export default Landing;  
