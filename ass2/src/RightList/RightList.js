@@ -24,7 +24,7 @@ const RightList = () => {
               
               {/* the selected space name */}
             
-              <button onClick={() => {
+              <button onClick={() => { 
                 setInbox([  
                   ...inbox, {id: idmax+1, title: temp, status: false}
                 ]);
