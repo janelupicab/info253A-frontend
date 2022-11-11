@@ -2,26 +2,30 @@ import React, { useContext } from "react";
 import { ItemContext } from "../App";
 import {VscAdd, VscCalendar, VscInbox, VscLocation, VscCircleFilled } from "react-icons/vsc";
 import { MdCalendarToday, MdExpandMore, MdPerson, MdOutlineKeyboardArrowRight } from "react-icons/md";
-
+import { Link } from "react-router-dom";
 
 
 const LeftFolders = () => {
     // Getting all the states from the ItemContext using useContext
     const { inbox, setInbox, today, setToday, upcoming, setUpcoming } = useContext(ItemContext);
 
+    const inboxIncompmlete = inbox.filter(task => task.status === false);
+    const todayIncomplete = today.filter(task => task.status === false);
+    const upcomingIncomplete = upcoming.filter(task => task.status === false);
+
     return (
       <>
       <div class="item2">
             <ul>
-                <li class = "bold">
+                <li >
                     <p>&emsp;&ensp;&nbsp;</p> 
-                    <span class="material-symbols-outlined blue"><VscInbox/></span>Inbox<span class = "gray">{inbox.length}</span></li>
+                    <span class="material-symbols-outlined blue"><VscInbox/></span><Link to="inbox">Inbox</Link><span class = "gray">{inboxIncompmlete.length}</span></li>
                 <li>
                     <p>&emsp;&ensp;&nbsp;</p>
-                    <span class="material-symbols-outlined green"><MdCalendarToday/></span>Today<span class = "gray">{today.length}</span></li>
+                    <span class="material-symbols-outlined green"><MdCalendarToday/></span><Link to="today">Today</Link><span class = "gray">{todayIncomplete.length}</span></li>
                 <li>
                     <p>&emsp;&ensp; </p>
-                    <span class="material-symbols-outlined purple"><VscCalendar/></span>Upcoming<span class = "gray">{upcoming.length}</span></li>
+                    <span class="material-symbols-outlined purple"><VscCalendar/></span><Link to="upcoming">Upcoming</Link><span class = "gray">{upcomingIncomplete.length}</span></li>
                 <li class = "bold">
                     <p>&emsp;&ensp; </p>
                     <span class="material-symbols-outlined gray1"><MdExpandMore/></span>Projects</li>
