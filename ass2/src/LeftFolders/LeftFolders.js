@@ -19,13 +19,13 @@ const LeftFolders = () => {
             <ul>
                 <li >
                     <p>&emsp;&ensp;&nbsp;</p> 
-                    <span class="material-symbols-outlined blue"><VscInbox/></span><Link to="inbox">Inbox</Link><span class = "gray">{inboxIncompmlete.length}</span></li>
+                    <span class="material-symbols-outlined blue"><VscInbox/></span><Link to="inbox" class = "link">Inbox</Link><span class = "gray">{inboxIncompmlete.length}</span></li>
                 <li>
                     <p>&emsp;&ensp;&nbsp;</p>
-                    <span class="material-symbols-outlined green"><MdCalendarToday/></span><Link to="today">Today</Link><span class = "gray">{todayIncomplete.length}</span></li>
+                    <span class="material-symbols-outlined green"><MdCalendarToday/></span><Link to="today" class = "link">Today</Link><span class = "gray">{todayIncomplete.length}</span></li>
                 <li>
                     <p>&emsp;&ensp; </p>
-                    <span class="material-symbols-outlined purple"><VscCalendar/></span><Link to="upcoming">Upcoming</Link><span class = "gray">{upcomingIncomplete.length}</span></li>
+                    <span class="material-symbols-outlined purple"><VscCalendar/></span><Link to="upcoming" class = "link">Upcoming</Link><span class = "gray">{upcomingIncomplete.length}</span></li>
                 <li class = "bold">
                     <p>&emsp;&ensp; </p>
                     <span class="material-symbols-outlined gray1"><MdExpandMore/></span>Projects</li>

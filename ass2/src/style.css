@@ -3,7 +3,7 @@
     font-family: 'Roboto';
     src: local('Roboto'), url(./fonts/Roboto/Roboto-Regular.ttf) format('truetype');
   }
-  
+
   h1{
     font-size: 20px;
     margin-top: 50px;
@@ -59,6 +59,10 @@ details{
     grid-row-gap: none;
   }
   
+.link{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
 .item1{ /* header left */
     grid-column: 1 / 7;
     grid-row: 1 / 1;
