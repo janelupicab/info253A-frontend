@@ -7,7 +7,7 @@ import {Route, Link, Routes, useLocation} from 'react-router-dom';
 
 const NavBar = () => {
 
-  const { inbox, setInbox, today, setToday, upcoming, setUpcoming } = useContext(ItemContext);
+  const { inbox, setInbox, today, setToday, upcoming, setUpcoming, temp, setTemp, showLeft, setShowLeft } = useContext(ItemContext);
   
   const inboxIncompmlete = inbox.filter(task => task.status === false);
   const todayIncomplete = today.filter(task => task.status === false);
@@ -54,7 +54,7 @@ const NavBar = () => {
      <div class="item1">
       
             <p>
-            <span class="material-symbols-outlined"> <MdOutlineMenu/> </span>
+            <span class="material-symbols-outlined" onClick = {()=>setShowLeft(!showLeft)}> <MdOutlineMenu/> </span>
             <section class = "searchIcon"> 
                 <span class="material-symbols-outlined"> <MdSearch/></span>
                 <input class = "searchField" type="text" placeholder="Quick Find" onChange={(e) => autocompleteMatch(e.target.value, thisList)}/>

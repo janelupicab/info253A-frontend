@@ -7,12 +7,14 @@ import { Link } from "react-router-dom";
 
 const LeftFolders = () => {
     // Getting all the states from the ItemContext using useContext
-    const { inbox, setInbox, today, setToday, upcoming, setUpcoming } = useContext(ItemContext);
+    const { inbox, setInbox, today, setToday, upcoming, setUpcoming, temp, setTemp, showLeft, setShowLeft } = useContext(ItemContext);
 
     const inboxIncompmlete = inbox.filter(task => task.status === false);
     const todayIncomplete = today.filter(task => task.status === false);
     const upcomingIncomplete = upcoming.filter(task => task.status === false);
 
+
+if(showLeft){
     return (
       <>
       <div class="item2">
@@ -58,5 +60,6 @@ const LeftFolders = () => {
       </>
     );
   };
+}
   
   export default LeftFolders;

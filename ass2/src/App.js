@@ -32,6 +32,7 @@ function App () {
     {id: 999, title: "upcoming2", status: false}
   ]);
    const [temp, setTemp] = useState("");
+   const [showLeft, setShowLeft] = useState(true); 
 
 
   return (
@@ -45,7 +46,9 @@ function App () {
         upcoming,
         setUpcoming,
         temp,
-        setTemp
+        setTemp,
+        showLeft,
+        setShowLeft
       }}
     >
 
@@ -66,7 +69,7 @@ function App () {
     </Routes>
 
       {/* <RightList /> */}
-      <LeftFolders />
+      <LeftFolders/> 
       </div>
     </ItemContext.Provider>
     </>
